@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>보라시스(주)</title>
+  <style>
+    body {
+      font-family: "맑은 고딕", sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+    .container {
+    width: 1200px; /* 고정 폭 지정 */
+    margin: 0 auto; /* 가운데 정렬 */
+   }
+   .img-fixed {
+    width: 600px;
+    height: auto;  /* 세로는 비율대로 */
+  }
+
+  .img-responsive {
+    width: 100%;    /* 부모 요소에 맞춰 늘어나거나 줄어듦 */
+    height: auto;
+  }
+    .navbar {
+      background: white;
+      padding: 15px 40px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 25px;
+      font-weight: bold;
+    }
+    .navbar .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+    .hero {
+       background-image: url('main_image.png'); /* 이미지 파일명 변경 */
+       background-size: cover;
+       background-position: center;
+       height: 50vh; /* 화면의 1/3 (100vh의 33%) */
+       display: flex;
+       align-items: center;
+       position : relative;
+       justify-content: center;
+    }
+
+    .hero-content {
+       display: flex;
+       align-items: center;
+       gap: 15px;
+       background-color: rgba(255, 255, 255, 0.6); /* 텍스트 가독성을 위한 반투명 배경 */
+       padding: 10px 20px;
+       border-radius: 10px;
+   }
+   .hero-text {
+     position: absolute;
+    top: 170px; /*화면 상단에서 20px 떨어진 위치 */
+     left: 50%;
+     color: #b655cd;
+     transform: translateX(-50%);
+     text-align: center;
+}
+    .hero h1 {
+      font-size: 24px;
+      margin: 10px 0 5px;
+    }
+    .hero p {
+      margin: 0;
+      color: #555;
+    }
+   
+   
+    section {
+      padding: 30px 0px;
+      border-bottom: 1px solid #eee;
+    }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+     align-items: center;
+     margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: 20px;
+      color: #b655cd;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .more-link {
+      font-size: 14px;
+      color: #888;
+      text-decoration: none;
+    }
+
+   .more-link:hover {
+      text-decoration: underline;
+      color: #a64fc8;
+    }
+    .content-row {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    .content-row img {
+      max-width: 600px;
+      border-radius: 0px;
+    }
+    .text {
+      flex: 1;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .product-img {
+      max-width: 200px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 20px;
+      background: #f2f2f2;
+      color: #666;
+    }
+  </style>
+
+
+</head>
+<body class="container">
+
+  <div class="navbar">
+    <img src="borasys-logo.jpeg" alt="로고" height="80" />
+    <div class="menu">
+      <a href="index.html">보라시스</a>
+      <a href="intro.html">보라시스 소개</a>
+      <a href="voip.html">사업영역</a>
+      <a href="product.html">제품소개</a>
+      <a href="#">게시판</a>
+      <a href="map.html">오시는 길</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class ="hero-text"> 
+    <h1 style="margin: 0;">보라시스 주식회사</h1>
+    <p><li>측정기 분야를 선도합니다.</li></p>
+  </div>
+</div>
+  <section>
+    <div class="section-header">
+      <div class="section-title">보라시스 소개</div>   
+       <a href="intro.html" class="more-link">더보기 &gt;</a>
+    </div>
+    <div class="content-row">
+      <div class="text">
+        <p>보라시스는 애질런트 정보통신 부분의 기술지원과 제품개발의 기술력을 바탕으로 탄생한 회사입니다.
+
+유무선 부분의 솔루션 개발경험, 다양한 종류의 컨설팅을 통한 기술 노하우가 있습니다.
+
+실제 연구소와 현장에서 부딪히는 많은 문제들을 극복하고 해결하면서 쌓아온 지식이 저희의 자산입니다.
+
+지금까지 저희는 이동통신 시장에서 한국형 측정 솔루션을 제공하여 기지국 회선 및 프로토콜 측정에 기여한 바 있습니다
+
+VoIP 분야에서, 순수 국내 기술로 대용향 호 측정 장비를 개발하여 미국 Tolly Group 으로부터 국제적인 인증을 획득하였으며 국내 시스템 성능 및 품질 측정 분야에서 기준 장비로 사용되고 있기도 합니다.
+
+신기술 개발에 필요한 측정기를 더 편리하게 제공하는것이 보라시스의 현대 가치입니다. 그리고 나아가서 네트워크의 토탈 솔루션과 서비스 품질 향상의 기반을 제공해 드리는 것을 저의의 미래 가치로 삼고 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-title">사업영역</div>   
+       <a href="voip.html" class="more-link">더보기 &gt;</a>
+    </div>
+    <div class="section-title">VOIP 개요</div>
+    <div class="text">
+      <p>네트워크가 발전하면서 음성 통신 분야가 패킷 통신의 영역으로 서비스를 확장하고 있습니다.
+이런 형태의 VoIP 통신의 경우 네트워크 특성과 망의 연동 요소, 단말의 특성 등 여러 요인에 의해서 품질이 영향을 받게 됩니다.
+다양한 요소의 성능과 품질, 프로토콜 분석 등의 서비스를 제공하여 보라시스는 고객에게 양질의 VoIP의 서비스가 구현되도록 노력할 것입니다.</p>
+    </div>
+    <div class="section-title">품질측정</div>
+    <div class="text">
+      <p>기본적으로 VoIP로 서비스를 하려면 음성에 대한 품질이 우수해야 합니다. 음성품질은 Active 방식에 의한 품질을 측정하는 VQT, Voice Checker, VeEX가 있어서 국제규격에 맞게 품질을 나타내는지 측정해줍니다. 또한, Soft Phone(Smart Caller)는 기본 Call 기능과 네트워크 진단기능이 포함된 지능적 품질측정이 단말이 됩니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-title">제품소개</div>   
+       <a href="product.html" class="more-link">더보기 &gt;</a>
+    </div>
+    <div class="content-row">
+      <img src="smartcallgen.gif"  alt="제품 이미지" class="product-img">
+      <div class="text">
+        <p><strong>Smart Call Gen SIP</strong><br>
+        <li>미국 Tolly Group 에서 성능, 기능에 대한 인증을 획득 함 </li>
+        <li>국내 TTA 등에서 기준장비로 사용하고 있음</li>
+        <li>VoIP Server, IP-PBX, Centrix, Soft Switch 등의 성능 측정</li>
+        <li>한국형 VoIP 시스템의 성능 측정용 Call Generator </li>
+        <li>보안 및 여러 Option 사항을 추가하여 다향한 측정이 가능한 장비</li></p>
+      </div>
+  </section>
+
+  <section>
+    <div class="section-title">게시판</div>
+    <p>보라시스 홈페이지에 오신 것을 환영합니다!</p>
+  </section>
+
+  <section>
+    <div class="section-title">오시는 길</div>
+     <a href="map.html" class="more-link">더보기 &gt;</a>
+    <div class="map-container">
+      <iframe src="https://maps.google.com/maps?q=보라시스&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+  </footer>
+
+</body>
+</html>

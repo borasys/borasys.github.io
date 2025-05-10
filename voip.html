@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>VoIP | 보라시스(주)</title>
+<style>
+    body {
+      font-family: "맑은 고딕", sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+    .container {
+    width: 1200px; /* 고정 폭 지정 */
+    margin: 0 auto; /* 가운데 정렬 */
+  }
+    .navbar {
+      background: white;
+      padding: 15px 40px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 25px;
+      font-weight: bold;
+    }
+    .navbar .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+    .hero {
+      background: #c7d6f3;
+      padding: 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 24px;
+      margin: 10px 0 5px;
+    }
+    .hero p {
+      margin: 0;
+      color: #555;
+    }
+    section {
+      padding: 30px 0px;
+      border-bottom: 1px solid #eee;
+    }
+    .section-title {
+      font-size: 18px;
+      color: #b655cd;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .content-row {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    .content-row img {
+      max-width: 600px;
+      border-radius: 0px;
+    }
+    .text {
+      flex: 1;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .product-img {
+      max-width: 200px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 20px;
+      background: #f2f2f2;
+      color: #666;
+    }
+    .sub-links {
+  	display: flex;
+ 	 justify-content: center;
+ 	 gap: 20px;
+ 	 margin-top: 10px;
+   }
+    .sub-links a {
+  	text-decoration: none;
+  	color: #6a1b9a; /* 보라색 계열 */
+  	font-weight: bold;
+  	transition: color 0.3s;
+    }
+
+   .sub-links a:hover {
+        color: #ab47bc; /* 마우스 올렸을 때 밝은 보라 */
+   }
+
+  </style>
+</head>
+
+<body class="container">
+
+  <div class="navbar">
+    <div class="logo"><strong>Borasy</strong></div>
+    <div class="menu">
+       <a href="index.html">보라시스</a>
+      <a href="intro.html">보라시스 소개</a>
+      <a href="voip.html">사업영역</a>
+      <a href="product.html">제품소개</a>
+      <a href="#">게시판</a>
+      <a href="map.html">오시는 길</a>
+    </div>
+  </div> 
+  <div class="hero">
+    <h1 style="margin: 0;">사업영역(VOIP)</h1>
+       <div class="sub-links">
+           <a href="voip.html">VoIP</a>
+           <a href="com.html">이동통신</a>
+           <a href="net.html">네트워크 최적화</a>
+           <a href="consult.html">컨설팅</a>
+  </div>
+  </div>
+</div>
+<section> 
+    <div class="section-title">VOIP </div>
+</section>
+  <section>
+    <div class="section-title">VOIP 개요 </div>
+    <div class="content-row">
+      <div class="text">
+        <p>네트워크가 발전하면서 음성 통신 분야가 패킷 통신의 영역으로 서비스를 확장하고 있습니다.
+이런 형태의 VoIP 통신의 경우 네트워크 특성과 망의 연동 요소, 단말의 특성 등 여러 요인에 의해서 품질이 영향을 받게 됩니다.
+다양한 요소의 성능과 품질, 프로토콜 분석 등의 서비스를 제공하여 보라시스는 고객에게  양질의 VoIP의 서비스가 구현되도록 노력할 것입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">품질측정</div>
+    <div class="text">
+      <p>기본적으로 VoIP로 서비스를 하려면 음성에 대한 품질이 우수해야 합니다. 음성품질은 Active 방식에 의한 품질을 측정하는 VQT, Voice Checker, VeEX가 있어서 국제규격에 맞게 품질을 나타내는지 측정해줍니다. 또한, Soft Phone(Smart Caller)는 기본 Call 기능과 네트워크 진단기능이 포함된 지능적 품질측정이 단말이 됩니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">프로토콜 모니터</div>
+    <div class="content-row">
+      <div class="text">
+        VoIP는 SIP, H.323, Megaco등의 프로토콜을 사용해서 신호접속을 합니다. 이런 신호들이 망간, 단말간, 단말과 시스템 간에 상호 연동이 잘 되고 있는지 측정하는 것은 신호접속을 위해 필수적으로 필요합니다.
+보라시스는 애질런트의 SART(Signaling Analyzer Real Time), DNA, TNA(Telephony Network Analyer), NA(Network Analyzer)등의 분석기를 통해 신호 추적을 가능하게 합니다</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">성능측정</div>
+     <div class="content-row">
+      <div class="text">
+    <p>시스템이나 서비스의 품질은 성능요소에 의해서 제약을 받습니다.
+따라서 처음에 구현되기 전에 예측되는 성능이 어느 정도 유지되는지 측정할 필요가 있습니다. 한편으로 서비스 중인 네트워크에서도 나타나는 증상에 떠른 성능 측성을 살펴볼 필요가 있습니다.
+<br>이를 위해 호의 성능을 측정하는 Smart CallGen SIP는 보라시스가 자체 개발한 것으로 미국의  Tolly Group의 검증을 받았고 국내에서 TTA에서 성능측정기로 사용하는 우수한 제품입니다. 한편 Multi Port 에서 Wire  Speed까지의 과부하를 단말단에서 걸어서 품질을 측정하는 애질런트의 N2X는 서비스 제공자들이 반드시 측정해야하는 필수 장비가 되고 있습니다</br></p>
+  </div>
+    </div>
+
+</section>
+
+  <footer>
+    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+  </footer>
+
+</body>
+</html>

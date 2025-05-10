@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>VoIP | 보라시스(주)</title>
+<style>
+    body {
+      font-family: "맑은 고딕", sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+    .container {
+    width: 1200px; /* 고정 폭 지정 */
+    margin: 0 auto; /* 가운데 정렬 */
+  }
+    .navbar {
+      background: white;
+      padding: 15px 40px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 25px;
+      font-weight: bold;
+    }
+    .navbar .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+    .hero {
+      background: #c7d6f3;
+      padding: 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 24px;
+      margin: 10px 0 5px;
+    }
+    .hero p {
+      margin: 0;
+      color: #555;
+    }
+    section {
+      padding: 30px 0px;
+      border-bottom: 1px solid #eee;
+    }
+    .section-title {
+      font-size: 18px;
+      color: #b655cd;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .content-row {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    .content-row img {
+      max-width: 600px;
+      border-radius: 0px;
+    }
+    .text {
+      flex: 1;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .product-img {
+      max-width: 200px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 20px;
+      background: #f2f2f2;
+      color: #666;
+    }
+    .sub-links {
+  	display: flex;
+ 	 justify-content: center;
+ 	 gap: 20px;
+ 	 margin-top: 10px;
+   }
+    .sub-links a {
+  	text-decoration: none;
+  	color: #6a1b9a; /* 보라색 계열 */
+  	font-weight: bold;
+  	transition: color 0.3s;
+    }
+
+   .sub-links a:hover {
+        color: #ab47bc; /* 마우스 올렸을 때 밝은 보라 */
+   }
+
+  </style>
+
+
+</head>
+<body class="container">
+
+  <div class="navbar">
+    <div class="logo"><strong>Borasy</strong></div>
+    <div class="menu">
+       <a href="index.html">보라시스</a>
+      <a href="intro.html">보라시스 소개</a>
+      <a href="voip.html">사업영역</a>
+      <a href="product.html">제품소개</a>
+      <a href="#">게시판</a>
+      <a href="map.html">오시는 길</a>
+    </div>
+  </div>
+  <div class="hero">
+    <h1 style="margin: 0;">VoiceChecker</h1>
+      <div class="sub-links">
+           <a href="product.html">Smart CallGen</a>
+           <a href="tams.html">TAMS</a>
+           <a href="tas.html">TAS/PE</a>
+           <a href="voicechecker.html">VoiceChecker</a>
+           <a href="wips.html">WIPS</a>
+           <a href="vqt.html">VQT</a>
+       </div>
+  </div>
+</div>
+
+  <section>
+    <div class="section-title">VoiceChecker</div>
+  </section>
+
+  <section>
+    <div class="section-title">개요</div>
+   <div class="text">
+      <p>전화 산업이 발전함에 따라 음성 품질은 일관성 있게 향상되어 왔다. 이제 새로운 VoIP   형태의 서비스, 패켓과 음성통신에서의 품질은 중요한 차별화의 요인이 되고 있다
+사용자들은 PSTN의 품질 수준에 익숙해 있으며, 이러한 기대수준의 맥락에서 품질 비교가 행해지고 있다.
+IP망의 경우 비실시간 어플리케이션을 지원하기 위해 개발되었기에 여러 요소에 의한 delay의 변화나 Burst성에 민감하지 않아서 품질 열화의 요소를 가지고 있다
+VoIP통신의 경우 네트웍 특성과 PSTN 통합 망의 연동요소, 단말특성 등 여러 요인에 의해서 품질이 영향을 받는다
+기존의 RFC2833 tone 측정은 다수의 평가자들에 의해 제공되는 수동적인 방법에 의해 실시되어 오고 있다
+VoIP 서비스를 하였을 때 고객이 느끼는 서비스 품질을 측정하는 신뢰성 있는 제품이 필요하다
+오랜 기술력을 바탕으로 한 신뢰와 여러 기관에서 비교된 통한 호성공율의 측정과 개선은 대외 공신력 확보에 중요한 요소가 됨</p>
+    </div> 
+  </section>
+
+<section>
+    <div class="section-title">특징</div>
+   <div class="text">
+   <p>-동시통화 지원(server 100 calls, Agent 4 calls, Auto phone tester 10 calls)
+-지역별 서비스 품질을 Software Agent, Hardware Agent 및 IP Phone에서 직접 측정
+-100,000,000 call 시험에서 99.999% 이상의 성공률 가짐
+-PESQ 에 의한 MOS측정(P.862.1)
+-RTP/RTCP Tx/Rx경우 최대 1000 채널 지원(711,723, 729)
+-Network emulation기능 (Jitter, loss, delay emulation)
+-Invite, 180 ringing, 200 connect, Info, Refer, Reinvite, 등의 메시지 test 기능
+-Register, Invite message authorization test 기능
+-종단까지의 네트웍 상황 추적 
+-고객의 네트웍 구성 정보
+-실시간 MOS value announce기능
+-실시간 Voice checking기능
+-채널별 Jitter, Delay ,Loss, MOS, E-model, R-factor 및 Graphical View지원
+-실시간 메시지 추적 및 시간 별 log file, 통계파일 생성
+-종단 문제, 네트웍 상황, 음성 품질 문제 등을 구분해서 분리
+-Register, Invite message authorization test 기능
+-동시 100지역 aging및 base line 구축( server type)
+-RFC2833 DTMF Event Loop back을 통한 RTP Path test 기능 제공
+-RFC3261, 3262, 3264, 3265, 3311, 3325, 3515, 3842, 3881, 4028, 2617, RTP/RTCP 지원</p>
+  <footer>
+    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+  </footer>
+
+</body>
+</html>

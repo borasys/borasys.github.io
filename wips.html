@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>VoIP | 보라시스(주)</title>
+<style>
+    body {
+      font-family: "맑은 고딕", sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+    .container {
+    width: 1200px; /* 고정 폭 지정 */
+    margin: 0 auto; /* 가운데 정렬 */
+  }
+    .navbar {
+      background: white;
+      padding: 15px 40px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 25px;
+      font-weight: bold;
+    }
+    .navbar .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+    .hero {
+      background: #c7d6f3;
+      padding: 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 24px;
+      margin: 10px 0 5px;
+    }
+    .hero p {
+      margin: 0;
+      color: #555;
+    }
+    section {
+      padding: 30px 0px;
+      border-bottom: 1px solid #eee;
+    }
+    .section-title {
+      font-size: 18px;
+      color: #b655cd;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .content-row {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    .content-row img {
+      max-width: 600px;
+      border-radius: 0px;
+    }
+    .text {
+      flex: 1;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .product-img {
+      max-width: 200px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 20px;
+      background: #f2f2f2;
+      color: #666;
+    }
+    .sub-links {
+  	display: flex;
+ 	 justify-content: center;
+ 	 gap: 20px;
+ 	 margin-top: 10px;
+   }
+    .sub-links a {
+  	text-decoration: none;
+  	color: #6a1b9a; /* 보라색 계열 */
+  	font-weight: bold;
+  	transition: color 0.3s;
+    }
+
+   .sub-links a:hover {
+        color: #ab47bc; /* 마우스 올렸을 때 밝은 보라 */
+   }
+
+  </style>
+
+
+</head>
+<body class="container">
+
+  <div class="navbar">
+    <div class="logo"><strong>Borasy</strong></div>
+    <div class="menu">
+      <a href="index.html">보라시스</a>
+      <a href="intro.html">보라시스 소개</a>
+      <a href="voip.html">사업영역</a>
+      <a href="product.html">제품소개</a>
+      <a href="#">게시판</a>
+      <a href="map.html">오시는 길</a>
+    </div>
+  </div>
+  <div class="hero">
+    <h1 style="margin: 0;">제품소개(WIPS)</h1>
+       <div class="sub-links">
+           <a href="product.html">Smart CallGen</a>
+           <a href="tams.html">TAMS</a>
+           <a href="tas.html">TAS/PE</a>
+           <a href="voicechecker.html">VoiceChecker</a>
+           <a href="wips.html">WIPS</a>
+           <a href="vqt.html">VQT</a>
+       </div>
+  </div>
+</div>
+
+  <section>
+    <div class="section-title">WIPS</div>
+    <img src="wips-image.png" alt="wips 이미지" >  
+  </section>
+
+  <section>
+    <div class="section-title">개요</div>
+   <div class="text">
+      <p>• Performance Test, Network Simulator, Call Server 등을 지원. 
+• Delay, Jitter, Packet Loss, Duplication Rate, Packet Reorder의 
+  Network Simulation을 지원.
+• Call Server를 지원하여 사용자 필요 시에 Call Server를 동작</p>
+    </div> 
+  </section>
+
+<section>
+    <div class="section-title">WIPS H/W 사양</div>
+   <div class="text">
+   <p>다양한 인터페이스와 noise filter를 통해 안정적으로 동작하도록 지원하여, MOS, delay, signal level, DTMF 등의 품질을 측정하게 함
+광대역 시그널링 (G.711.1/G.722/G.729.1, AMR-WB,SILK)에 의한 호 성공율 측정
+ 단일 단말에 대한 마이1.크/스피커의 품질을 구별하여 측정(P.863 POLQA / G.107)
+SIP서버 기능 구현하여 직접 통화 연결 가능
+다양한 주파수 대역의 신호를 분석하여 주파수 왜곡, 신호 감쇄등을 측정하며, sweeping신호를 통해 가청 주파수 대역의 신호 특성을 분석함-4 port 10/100/giga ethernet
+ -1 power button
+ -1 reset button
+ -2 USB controller
+ -1 Console RJ 45
+ -12 V 5A 6WPower Adapter
+ -AC 100-240V
+ -operation -20 ~ 70 °C
+- Half Rack size 
+ -215* 44 * 190 mm / 1.2 Kg</p>
+
+<section>
+    <div class="section-title">특징</div>
+   <div class="text">
+      <p>Delay :
+     Custom
+      Fixed (1 ms - 8 sec)
+      Uniform Distribution
+      Normal Distribution
+      Live network Capture (Opt)
+Packet Loss : 
+      Custom
+      Periodic Loss
+      Random Loss
+Jitter 
+      Normal Distribution
+      Gaussian distribution
+      Normal distribution
+Dynamic Routing Effects :
+      Out-of-Order Packets
+      Duplicate Packets
+Bandwidth :
+     2400 bps to 622 Mbps
+     Symmetric bandwidth
+     Asymmetric bandwidth
+Opt :
+      IP PBX(IMS Server) option
+      DHCP option
+      Packet Logger
+      Giga dummy hub
+
+</p>
+    </div> 
+  </section>
+  <footer>
+    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+  </footer>
+
+</body>
+</html>

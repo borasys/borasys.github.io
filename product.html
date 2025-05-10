@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>VoIP | 보라시스(주)</title>
+<style>
+    body {
+      font-family: "맑은 고딕", sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+    .container {
+    width: 1200px; /* 고정 폭 지정 */
+    margin: 0 auto; /* 가운데 정렬 */
+  }
+    .navbar {
+      background: white;
+      padding: 15px 40px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 25px;
+      font-weight: bold;
+    }
+    .navbar .menu a {
+      text-decoration: none;
+      color: #333;
+    }
+    .hero {
+      background: #c7d6f3;
+      padding: 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 24px;
+      margin: 10px 0 5px;
+    }
+    .hero p {
+      margin: 0;
+      color: #555;
+    }
+    section {
+      padding: 30px 0px;
+      border-bottom: 1px solid #eee;
+    }
+    .section-title {
+      font-size: 18px;
+      color: #b655cd;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .content-row {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    .content-row img {
+      max-width: 600px;
+      border-radius: 0px;
+    }
+    .text {
+      flex: 1;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .product-img {
+      max-width: 200px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 20px;
+      background: #f2f2f2;
+      color: #666;
+    }
+    .sub-links {
+  	display: flex;
+ 	 justify-content: center;
+ 	 gap: 20px;
+ 	 margin-top: 10px;
+   }
+    .sub-links a {
+  	text-decoration: none;
+  	color: #6a1b9a; /* 보라색 계열 */
+  	font-weight: bold;
+  	transition: color 0.3s;
+    }
+
+   .sub-links a:hover {
+        color: #ab47bc; /* 마우스 올렸을 때 밝은 보라 */
+   }
+
+  </style>
+</head>
+<body class="container">
+
+  <div class="navbar">
+    <div class="logo"><strong>Borasy</strong></div>
+    <div class="menu">
+       <a href="index.html">보라시스</a>
+      <a href="intro.html">보라시스 소개</a>
+      <a href="voip.html">사업영역</a>
+      <a href="product.html">제품소개</a>
+      <a href="#">게시판</a>
+      <a href="map.html">오시는 길</a>
+    </div>
+  </div>
+  <div class="hero">
+    <h1 style="margin: 0;">제품소개(Smart CallGen)</h1>
+         <div class="sub-links">
+           <a href="product.html">Smart CallGen</a>
+           <a href="tams.html">TAMS</a>
+           <a href="tas.html">TAS/PE</a>
+           <a href="voicechecker.html">VoiceChecker</a>
+           <a href="wips.html">WIPS</a>
+           <a href="vqt.html">VQT</a>
+       </div>
+  </div>
+</div>
+
+  <section>
+    <div class="section-title">CallGen</div>
+      <img src="smartcallgen.gif" alt="스마트콜젠 이미지" >
+      <div class="text">
+        <p><li>미국 Tolly Group 에서 성능, 기능에 대한 인증을 획득 함</li>
+<li>국내 TTA 등에서 기준장비로 사용하고 있음</li>
+<li>VoIP Server, IP-PBX, Centrix, Soft Switch 등의 성능 측정</li>
+<li>한국형 VoIP 시스템의 성능 측정용 Call Generator</li>
+<li>보안 및 여러 Option 사항을 추가하여 다향한 측정이 가능한 장비</li></p>
+   </div>  
+  </section>
+
+  <section>
+    <div class="section-title">기능</div>
+   <div class="text">
+      <p><li> Stress Call Test : 초당 1000call 이상 동시 통화 60,000call 지원</li> ( Option 사항)
+<li> 700 CPS(대형)/ 400CPS(소형) 지원</li>
+<li> SRTP/TLS ARiA 등 보안 제품에 성능 측정</li>
+<li>Proxy Server에 65,000개의 Endpoint Register/Unregister 가능</li>
+<li>지원 코덱 : G729, G711aLaw, G711uLaw 방식 동시지원</li>
+<li>RTP/RTCP Tx/Rx 경우 최대 1,500 채널 지원, RFC2833 DTMF Event Loop back을 통한 RTP Path Test 가능</li>
+<li> 채널 별 Jitter, Delay, Loss, Recoder, Rvalue, MOS 통계 및 Graphical view 제공</li>
+<li>invite 180 ringing , 200 connect, Cancel, Byte, Info, rtc2833, Refer Reivite, Update, Message, Subscribe 매시지 test 기능</li>
+<li>Register, Invite Message Authorization Test 기능</li>
+<li>실시간 메시지 Trace 및 시간별 Log file, Statistics file 생성, 동시 100대 IP Agent Test</li>
+<li>RFC3261, 3262, 3264,3311, 3325,3515, 3842, 3881, 4028, 2617</li>
+<li>쉬운 사용방법, 설치부터 기본 사용까지 1시간 이내에 가능, 원격제어에 의한 손쉬운 방법</li></p>
+    </div> 
+  </section>
+
+<section>
+    <div class="section-title">시스템 구성도</div>
+    <img src="configuration.png" alt="스마트콜젠 구성도" >
+</section>
+<section>
+    <div class="section-title">측정결과</div>
+    <img src="result.gif" height="500" alt="스마트콜젠 측정결과" >
+ </section>  
+
+  <footer>
+    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
