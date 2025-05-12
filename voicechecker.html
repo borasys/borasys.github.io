@@ -11,7 +11,7 @@
       color: #333;
     }
     .container {
-    width: 1200px; /* 고정 폭 지정 */
+    width: 1000px; /* 고정 폭 지정 */
     margin: 0 auto; /* 가운데 정렬 */
   }
     .navbar {
@@ -24,7 +24,7 @@
     }
     .navbar .menu {
       display: flex;
-      gap: 25px;
+      gap: 9px;
       font-weight: bold;
     }
     .navbar .menu a {
@@ -76,12 +76,12 @@
       height: 300px;
       border: 0;
     }
-    footer {
+   footer {
       text-align: center;
-      font-size: 13px;
+      font-size: 18px;
       padding: 20px;
-      background: #f2f2f2;
-      color: #666;
+      background: #595c50;
+      color: #fff;
     }
     .sub-links {
   	display: flex;
@@ -107,13 +107,16 @@
 <body class="container">
 
   <div class="navbar">
-    <div class="logo"><strong>Borasy</strong></div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <a href="index.html">
+           <img src="borasys-logo.png" alt="로고" style="width: 100px; height: auto;" /></a>
+      <p style="margin: 0; font-size: 20px; font-weight: bold;"> 보라시스(주)</p>
+    </div>
     <div class="menu">
-       <a href="index.html">보라시스</a>
-      <a href="intro.html">보라시스 소개</a>
+      <a href="index.html">처음으로</a>
+      <a href="intro.html">보라시스소개</a>
       <a href="voip.html">사업영역</a>
       <a href="product.html">제품소개</a>
-      <a href="#">게시판</a>
       <a href="map.html">오시는 길</a>
     </div>
   </div>
@@ -150,28 +153,30 @@ VoIP 서비스를 하였을 때 고객이 느끼는 서비스 품질을 측정�
 <section>
     <div class="section-title">특징</div>
    <div class="text">
-   <p>-동시통화 지원(server 100 calls, Agent 4 calls, Auto phone tester 10 calls)
--지역별 서비스 품질을 Software Agent, Hardware Agent 및 IP Phone에서 직접 측정
--100,000,000 call 시험에서 99.999% 이상의 성공률 가짐
--PESQ 에 의한 MOS측정(P.862.1)
--RTP/RTCP Tx/Rx경우 최대 1000 채널 지원(711,723, 729)
--Network emulation기능 (Jitter, loss, delay emulation)
--Invite, 180 ringing, 200 connect, Info, Refer, Reinvite, 등의 메시지 test 기능
--Register, Invite message authorization test 기능
--종단까지의 네트웍 상황 추적 
--고객의 네트웍 구성 정보
--실시간 MOS value announce기능
--실시간 Voice checking기능
--채널별 Jitter, Delay ,Loss, MOS, E-model, R-factor 및 Graphical View지원
--실시간 메시지 추적 및 시간 별 log file, 통계파일 생성
--종단 문제, 네트웍 상황, 음성 품질 문제 등을 구분해서 분리
--Register, Invite message authorization test 기능
--동시 100지역 aging및 base line 구축( server type)
--RFC2833 DTMF Event Loop back을 통한 RTP Path test 기능 제공
--RFC3261, 3262, 3264, 3265, 3311, 3325, 3515, 3842, 3881, 4028, 2617, RTP/RTCP 지원</p>
-  <footer>
-    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+   <p><li>동시통화 지원(server 100 calls, Agent 4 calls, Auto phone tester 10 calls)</li>
+<li>지역별 서비스 품질을 Software Agent, Hardware Agent 및 IP Phone에서 직접 측정</li>
+<li>100,000,000 call 시험에서 99.999% 이상의 성공률 가짐</li>
+<li>PESQ 에 의한 MOS측정(P.862.1)</li>
+<li>RTP/RTCP Tx/Rx경우 최대 1000 채널 지원(711,723, 729)</li>
+<li>Network emulation기능 (Jitter, loss, delay emulation)</li>
+<li>Invite, 180 ringing, 200 connect, Info, Refer, Reinvite, 등의 메시지 test 기능</li>
+<li>Register, Invite message authorization test 기능</li>
+<li>종단까지의 네트웍 상황 추적 </li>
+<li>고객의 네트웍 구성 정보</li>
+<li>실시간 MOS value announce기능</li>
+<li>실시간 Voice checking기능</li>
+<li>채널별 Jitter, Delay ,Loss, MOS, E-model, R-factor 및 Graphical View지원</li>
+<li>실시간 메시지 추적 및 시간 별 log file, 통계파일 생성</li>
+<li>종단 문제, 네트웍 상황, 음성 품질 문제 등을 구분해서 분리</li>
+<li>Register, Invite message authorization test 기능</li>
+<li>동시 100지역 aging및 base line 구축( server type)</li>
+<li>RFC2833 DTMF Event Loop back을 통한 RTP Path test 기능 제공</li>
+<li>RFC3261, 3262, 3264, 3265, 3311, 3325, 3515, 3842, 3881, 4028, 2617, RTP/RTCP 지원</li></p>
+ </section>
+<section>
+ <footer>
+    보라시스(주)  서울 영등포구 선유로 27 대륭빌딩 915호  전화번호 : 010-5238-0798  이메일 : sdsul@naver.com
   </footer>
-
+</section>
 </body>
 </html>

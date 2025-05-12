@@ -11,7 +11,7 @@
       color: #333;
     }
     .container {
-    width: 1200px; /* 고정 폭 지정 */
+    width: 1000px; /* 고정 폭 지정 */
     margin: 0 auto; /* 가운데 정렬 */
   }
     .navbar {
@@ -24,7 +24,7 @@
     }
     .navbar .menu {
       display: flex;
-      gap: 25px;
+      gap: 9px;
       font-weight: bold;
     }
     .navbar .menu a {
@@ -76,12 +76,12 @@
       height: 300px;
       border: 0;
     }
-    footer {
+   footer {
       text-align: center;
-      font-size: 13px;
+      font-size: 18px;
       padding: 20px;
-      background: #f2f2f2;
-      color: #666;
+      background: #595c50;
+      color: #fff;
     }
     .sub-links {
   	display: flex;
@@ -107,16 +107,20 @@
 <body class = "container">
 
   <div class="navbar">
-    <div class="logo"><strong>Borasy</strong></div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <a href="index.html">
+           <img src="borasys-logo.png" alt="로고" style="width: 100px; height: auto;" /></a>
+      <p style="margin: 0; font-size: 20px; font-weight: bold;"> 보라시스(주)</p>
+    </div>
     <div class="menu">
-       <a href="index.html">보라시스</a>
-      <a href="intro.html">보라시스 소개</a>
+      <a href="index.html">처음으로</a>
+      <a href="intro.html">보라시스소개</a>
       <a href="voip.html">사업영역</a>
       <a href="product.html">제품소개</a>
-      <a href="#">게시판</a>
       <a href="map.html">오시는 길</a>
     </div>
   </div>
+
   <div class="hero">
     <h1 style="margin: 0;">사업영역 (이동통신)</h1>
        <div class="sub-links">
@@ -149,9 +153,11 @@
    <p>계측기를 하용함에 따라 종단측정, 망 테스트 등을 활용함으로써 복잡하고 광범위한 네트워크 환경에서 실시간 특성 파알
 현 고객의 요구 증가에 따른 추가적인 단말서비스 측정을 가능하게 함
 새로운 부가가치 서비스의 안정적 운영을 통한 이익 창출</p>
-  <footer>
-    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+ </section> 
+<footer>
+    보라시스(주)  서울 영등포구 선유로 27 대륭빌딩 915호  전화번호 : 010-5238-0798  이메일 : sdsul@naver.com
   </footer>
+
 
 </body>
 </html>

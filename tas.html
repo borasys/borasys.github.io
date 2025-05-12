@@ -11,7 +11,7 @@
       color: #333;
     }
     .container {
-    width: 1200px; /* 고정 폭 지정 */
+    width: 1000px; /* 고정 폭 지정 */
     margin: 0 auto; /* 가운데 정렬 */
   }
     .navbar {
@@ -24,7 +24,7 @@
     }
     .navbar .menu {
       display: flex;
-      gap: 25px;
+      gap: 9px;
       font-weight: bold;
     }
     .navbar .menu a {
@@ -76,12 +76,12 @@
       height: 300px;
       border: 0;
     }
-    footer {
+   footer {
       text-align: center;
-      font-size: 13px;
+      font-size: 18px;
       padding: 20px;
-      background: #f2f2f2;
-      color: #666;
+      background: #595c50;
+      color: #fff;
     }
     .sub-links {
   	display: flex;
@@ -107,18 +107,21 @@
 <body class="container">
 
   <div class="navbar">
-    <div class="logo"><strong>Borasy</strong></div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+    <a href="index.html">
+           <img src="borasys-logo.png" alt="로고" style="width: 100px; height: auto;" /></a>
+      <p style="margin: 0; font-size: 20px; font-weight: bold;"> 보라시스(주)</p>
+    </div>
     <div class="menu">
-       <a href="index.html">보라시스</a>
-      <a href="intro.html">보라시스 소개</a>
+      <a href="index.html">처음으로</a>
+      <a href="intro.html">보라시스소개</a>
       <a href="voip.html">사업영역</a>
       <a href="product.html">제품소개</a>
-      <a href="#">게시판</a>
       <a href="map.html">오시는 길</a>
     </div>
   </div>
   <div class="hero">
-    <h1 style="margin: 0;">제품소개(TAS/PE)</h1>
+    <h1 style="margin: 0;" style="width=1000px">제품소개(TAS/PE)</h1>
        <div class="sub-links">
            <a href="product.html">Smart CallGen</a>
            <a href="tams.html">TAMS</a>
@@ -132,7 +135,7 @@
 
   <section>
     <div class="section-title">TAS/PE</div>
-    <img src="tas.gif" alt="타스구성도" >  
+    <img src="tas.gif" alt="타스구성도" style="width: 600px; height: auto;">  
   </section>
 
   <section>
@@ -159,7 +162,7 @@ smart Phone, 1X phone, LTE (VoLTE) phone등의 이동통신 단말의 체감품�
 SIP서버 기능 구현하여 직접 통화 연결 가능
 다양한 주파수 대역의 신호를 분석하여 주파수 왜곡, 신호 감쇄등을 측정하며, sweeping신호를 통해 가청 주파수 대역의 신호 특성을 분석함</p>
   <footer>
-    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+    보라시스(주)  서울 영등포구 선유로 27 대륭빌딩 915호  전화번호 : 010-5238-0798  이메일 : sdsul@naver.com
   </footer>
 
 </body>

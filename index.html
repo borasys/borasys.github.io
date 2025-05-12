@@ -12,7 +12,7 @@
       color: #333;
     }
     .container {
-    width: 1200px; /* 고정 폭 지정 */
+    width: 1000px; /* 고정 폭 지정 */
     margin: 0 auto; /* 가운데 정렬 */
    }
    .img-fixed {
@@ -34,7 +34,7 @@
     }
     .navbar .menu {
       display: flex;
-      gap: 25px;
+      gap: 9px;
       font-weight: bold;
     }
     .navbar .menu a {
@@ -45,13 +45,21 @@
        background-image: url('main_image.png'); /* 이미지 파일명 변경 */
        background-size: cover;
        background-position: center;
-       height: 50vh; /* 화면의 1/3 (100vh의 33%) */
+       height: 40vh; /* 화면의 1/3 (100vh의 50%) */
        display: flex;
-       align-items: center;
+       align-items:  flex-start;
        position : relative;
        justify-content: center;
+       padding-top: 150px; /* 위쪽 여백 */
     }
-
+    .hero-description {
+       font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+       color: #ffffff;
+       font-size: 1.3rem;
+       text-align: center;
+       text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+       line-height: 2.0;
+}
     .hero-content {
        display: flex;
        align-items: center;
@@ -62,10 +70,10 @@
    }
    .hero-text {
      position: absolute;
-    top: 170px; /*화면 상단에서 20px 떨어진 위치 */
+     top:300%  /*화면 상단에서 190px 떨어진 위치 */
      left: 50%;
      color: #b655cd;
-     transform: translateX(-50%);
+     transform: translateX(-50%, -50%);
      text-align: center;
 }
     .hero h1 {
@@ -76,8 +84,6 @@
       margin: 0;
       color: #555;
     }
-   
-   
     section {
       padding: 30px 0px;
       border-bottom: 1px solid #eee;
@@ -128,33 +134,37 @@
     }
     footer {
       text-align: center;
-      font-size: 13px;
+      font-size: 18px;
       padding: 20px;
-      background: #f2f2f2;
-      color: #666;
+      background: #595c50;
+      color: #fff;
     }
   </style>
 
 
 </head>
 <body class="container">
-
   <div class="navbar">
-    <img src="borasys-logo.jpeg" alt="로고" height="80" />
+    <div style="display: flex; align-items: center; gap: 10px;">
+       <a href="index.html">
+           <img src="borasys-logo.png" alt="로고" style="width: 100px; height: auto;" /></a>
+      <p style="margin: 0; font-size: 20px; font-weight: bold;"> 보라시스(주)</p>
+    </div>
     <div class="menu">
-      <a href="index.html">보라시스</a>
-      <a href="intro.html">보라시스 소개</a>
+      <a href="index.html">처음으로</a>
+      <a href="intro.html">보라시스소개</a>
       <a href="voip.html">사업영역</a>
       <a href="product.html">제품소개</a>
-      <a href="#">게시판</a>
       <a href="map.html">오시는 길</a>
     </div>
   </div>
 
   <div class="hero">
-    <div class ="hero-text"> 
-    <h1 style="margin: 0;">보라시스 주식회사</h1>
-    <p><li>측정기 분야를 선도합니다.</li></p>
+    <div class ="hero-description"> 
+       <h1 style="margin: 0;">Borasys is Engineering Tomorrow, Delivering Real Value</h1>
+             <li>Advanced Technology</li>
+             <li>Smart Solutions</li>
+             <li>Inspired by Vision</li>
   </div>
 </div>
   <section>
@@ -227,7 +237,7 @@ VoIP 분야에서, 순수 국내 기술로 대용향 호 측정 장비를 개발
   </section>
 
   <footer>
-    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+    보라시스(주)  서울 영등포구 선유로 27 대륭빌딩 915호  전화번호 : 010-5238-0798  이메일 : sdsul@naver.com
   </footer>
 
 </body>

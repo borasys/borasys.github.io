@@ -11,7 +11,7 @@
       color: #333;
     }
     .container {
-    width: 1200px; /* 고정 폭 지정 */
+    width: 1000px; /* 고정 폭 지정 */
     margin: 0 auto; /* 가운데 정렬 */
   }
     .navbar {
@@ -24,7 +24,7 @@
     }
     .navbar .menu {
       display: flex;
-      gap: 25px;
+      gap: 9px;
       font-weight: bold;
     }
     .navbar .menu a {
@@ -76,13 +76,14 @@
       height: 300px;
       border: 0;
     }
-    footer {
+   footer {
       text-align: center;
-      font-size: 13px;
+      font-size: 18px;
       padding: 20px;
-      background: #f2f2f2;
-      color: #666;
+      background: #595c50;
+      color: #fff;
     }
+
     .sub-links {
   	display: flex;
  	 justify-content: center;
@@ -106,14 +107,17 @@
 </head>
 <body class="container">
 
-  <div class="navbar">
-    <div class="logo"><strong>Borasy</strong></div>
+ <div class="navbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+     <a href="index.html">
+           <img src="borasys-logo.png" alt="로고" style="width: 100px; height: auto;" /></a>
+      <p style="margin: 0; font-size: 20px; font-weight: bold;"> 보라시스(주)</p>
+    </div>
     <div class="menu">
-       <a href="index.html">보라시스</a>
-      <a href="intro.html">보라시스 소개</a>
+      <a href="index.html">처음으로</a>
+      <a href="intro.html">보라시스소개</a>
       <a href="voip.html">사업영역</a>
       <a href="product.html">제품소개</a>
-      <a href="#">게시판</a>
       <a href="map.html">오시는 길</a>
     </div>
   </div>
@@ -132,45 +136,41 @@
 
   <section>
     <div class="section-title">VQT</div>
-    <img src="vqt-image.gif" alt="vqt 이미지" >  
+    <img src="vqt-image.gif" alt="vqt 이미지"  width="500px" >  
   </section>
 
   <section>
     <div class="section-title">구성요소</div>
    <div class="text">
-      <p> Acquisition Card / Test Interface Ports
-– Analog FXO and E&M
-– 10/100 Ethernet (VoIP) interfaces. 
- VQT Application 
-– Intuitive(직관) and easy-to-use software 
-– Provide necessary steps to test voice quality, calculates and 
-displays measurement results in both graphical and 
-spreadsheet formats 
- VQT Hardware Platforms
-– VQT Portable Analyzer
- Other VQT hardware
-– MPU (Multi-Port Unit)</p>
+      <p> Acquisition Card / Test Interface Ports
+<li> Analog FXO and E&M</li>
+<li> 10/100 Ethernet (VoIP) interfaces</li><br>VQT Application </br>
+<li> Intuitive(직관) and easy-to-use software</li> 
+<li> Provide necessary steps to test voice quality calculates and displays measurement results in both graphical and spreadsheet formats</li>
+<br>VQT Hardware Platforms</br>
+<li> VQT Portable Analyzer Other VQT hardware</li>
+<li> MPU (Multi-Port Unit)</li></p>
     </div> 
   </section>
 
 <section>
     <div class="section-title">측정요소</div>
-   <div class="text">
-   <p>Voice Quality definition
- PAMS, PESQ
- Echo PACE, Echo Doubletalk
- Delay
- VAD
- DTMF Tone measurement
- Signal Loss measurement
- Impulse Response
-
-</p>
-
-
-  <footer>
-    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+   <div class="text"> 
+          <li> Voice Quality definition</li>
+          <li>PAMS PESQ</li>
+          <li> Echo PACE Echo Doubletalk</li>
+          <li>Delay</li>
+          <li>VAD</li>
+          <li>DTMF Tone measuremen</li>
+          <li>Signal Loss measurement</li>
+          <li>Impulse Response</li>
+       </div>
+</section>
+<section>
+<footer>
+    보라시스(주)  서울 영등포구 선유로 27 대륭빌딩 915호  전화번호 : 010-5238-0798  이메일 : sdsul@naver.com
   </footer>
+</section>
 
 </body>
 </html>

@@ -11,7 +11,7 @@
       color: #333;
     }
     .container {
-    width: 1200px; /* 고정 폭 지정 */
+    width: 1000px; /* 고정 폭 지정 */
     margin: 0 auto; /* 가운데 정렬 */
   }
     .navbar {
@@ -24,7 +24,7 @@
     }
     .navbar .menu {
       display: flex;
-      gap: 25px;
+      gap: 9px;
       font-weight: bold;
     }
     .navbar .menu a {
@@ -76,13 +76,14 @@
       height: 300px;
       border: 0;
     }
-    footer {
+   footer {
       text-align: center;
-      font-size: 13px;
+      font-size: 18px;
       padding: 20px;
-      background: #f2f2f2;
-      color: #666;
+      background: #595c50;
+      color: #fff;
     }
+
     .sub-links {
   	display: flex;
  	 justify-content: center;
@@ -106,13 +107,16 @@
 <body class="container">
 
   <div class="navbar">
-    <div class="logo"><strong>Borasy</strong></div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+       <a href="index.html">
+           <img src="borasys-logo.png" alt="로고" style="width: 100px; height: auto;" /></a>
+      <p style="margin: 0; font-size: 20px; font-weight: bold;"> 보라시스(주)</p>
+    </div>
     <div class="menu">
-       <a href="index.html">보라시스</a>
-      <a href="intro.html">보라시스 소개</a>
+      <a href="index.html">처음으로</a>
+      <a href="intro.html">보라시스소개</a>
       <a href="voip.html">사업영역</a>
       <a href="product.html">제품소개</a>
-      <a href="#">게시판</a>
       <a href="map.html">오시는 길</a>
     </div>
   </div>
@@ -165,9 +169,10 @@ SIP 프로토콜의 Request Message와 Response Message를 구분하여 Scenario
 -유일하고 차별화된 결과치를 제시
 -TAS연동에 따른 음성품질과 프로토콜 검증을 단일 시스템에서 측정
 -PE-11연동에 의해서 동시에 복수 단말에 대한 품질측정(MOS) 가능</p>
-  <footer>
-    ⓒ 2025 BORASYS Co., Ltd. All rights reserved.
+<footer>
+    보라시스(주)  서울 영등포구 선유로 27 대륭빌딩 915호  전화번호 : 010-5238-0798  이메일 : sdsul@naver.com
   </footer>
+
 
 </body>
 </html>
