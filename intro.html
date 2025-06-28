@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>보라시스(주)</title>
   <style>
     body {
@@ -10,20 +11,33 @@
       background: #fff;
       color: #333;
     }
-    .container {
-    width: 1000px; /* 고정 폭 지정 */
-    margin: 0 auto; /* 가운데 정렬 */
-  }
+     .container {
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .img-fixed {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+    }
+    .img-responsive {
+      width: 100%;
+      height: auto;
+    }
     .navbar {
       background: white;
-      padding: 15px 40px;
+      padding: 15px 20px;
       border-bottom: 1px solid #ddd;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
     }
     .navbar .menu {
       display: flex;
+      flex-wrap: wrap;
       gap: 9px;
       font-weight: bold;
     }
@@ -56,12 +70,14 @@
     }
     .content-row {
       display: flex;
+      flex-wrap: wrap;
       gap: 30px;
       align-items: flex-start;
     }
     .content-row img {
-      max-width: 600px;
-      border-radius: 0px;
+      max-width: 100%;
+       height: auto;
+      border-radius: 0;
     }
     .text {
       flex: 1;
@@ -70,6 +86,7 @@
     }
     .product-img {
       max-width: 200px;
+      width: 100%;
     }
     .map-container iframe {
       width: 100%;
@@ -82,6 +99,29 @@
       padding: 20px;
       background: #595c50;
       color: #fff;
+    }
+   @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar .menu {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .hero-description {
+        font-size: 1rem;
+      }
+      .hero h1 {
+        font-size: 20px;
+      }
+      .section-title {
+        font-size: 18px;
+      }
+      .text {
+        font-size: 13px;
+      }
     }
   </style>
 
@@ -131,7 +171,7 @@
 
   <section>
     <div class="section-title">인증</div>
-   <img src="certification.gif" alt="인증서 이미지"  style="width:1000px">
+   <img src="certification.gif" alt="인증서 이미지"  style="max-width: 100%; height: auto;">
     
   </section>
 
