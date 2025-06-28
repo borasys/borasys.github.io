@@ -2,6 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>VoIP | 보라시스(주)</title>
 <style>
     body {
@@ -13,18 +15,21 @@
     .container {
     width: 1000px; /* 고정 폭 지정 */
     margin: 0 auto; /* 가운데 정렬 */
+    padding: 0 16px;  
   }
     .navbar {
       background: white;
       padding: 15px 40px;
       border-bottom: 1px solid #ddd;
       display: flex;
+      flex-wrap: wrap;  
       align-items: center;
       justify-content: space-between;
     }
     .navbar .menu {
       display: flex;
       gap: 9px;
+      flex-wrap: wrap;
       font-weight: bold;
     }
     .navbar .menu a {
@@ -76,6 +81,11 @@
       height: 300px;
       border: 0;
     }
+   img, iframe {
+  max-width: 100%;          /* 이미지가 부모 너비를 넘지 않게 */
+  height: auto;
+}
+
    footer {
       text-align: center;
       font-size: 18px;
@@ -142,9 +152,11 @@
   <section>
     <div class="section-title">구성요소</div>
    <div class="text">
-      <p> Acquisition Card / Test Interface Ports
+     <ul> Acquisition Card / Test Interface Ports
 <li> Analog FXO and E&M</li>
-<li> 10/100 Ethernet (VoIP) interfaces</li><br>VQT Application </br>
+<li> 10/100 Ethernet (VoIP) interfaces</li>
+</ul>
+<br>VQT Application </br>
 <li> Intuitive(직관) and easy-to-use software</li> 
 <li> Provide necessary steps to test voice quality calculates and displays measurement results in both graphical and spreadsheet formats</li>
 <br>VQT Hardware Platforms</br>
