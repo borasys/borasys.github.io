@@ -2,7 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<title>VoIP | 보라시스(주)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CallGen | 보라시스(주)</title>
 <style>
     body {
       font-family: "맑은 고딕", sans-serif;
@@ -11,19 +12,32 @@
       color: #333;
     }
     .container {
-    width: 1000px; /* 고정 폭 지정 */
-    margin: 0 auto; /* 가운데 정렬 */
+     max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 16px;
   }
+   .img-fixed {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+    }
+    .img-responsive {
+      width: 100%;
+      height: auto;
+    }
     .navbar {
       background: white;
-      padding: 15px 40px;
+      padding: 15px 20px;
       border-bottom: 1px solid #ddd;
-      display: flex;
+       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
     }
     .navbar .menu {
       display: flex;
+      flex-wrap: wrap;
       gap: 9px;
       font-weight: bold;
     }
@@ -45,7 +59,7 @@
       color: #555;
     }
     section {
-      padding: 30px 0px;
+      padding: 30px 16px;
       border-bottom: 1px solid #eee;
     }
     .section-title {
@@ -56,11 +70,13 @@
     }
     .content-row {
       display: flex;
+      flex-wrap: wrap;
       gap: 30px;
       align-items: flex-start;
     }
     .content-row img {
-      max-width: 600px;
+      max-width: 100%;
+        height: auto;
       border-radius: 0px;
     }
     .text {
@@ -70,20 +86,43 @@
     }
     .product-img {
       max-width: 200px;
+      width: 100%;
     }
     .map-container iframe {
       width: 100%;
       height: 300px;
       border: 0;
     }
-   footer {
+    footer {
       text-align: center;
       font-size: 18px;
       padding: 20px;
       background: #595c50;
       color: #fff;
     }
-
+     @media (max-width: 760px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar .menu {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .hero-description {
+        font-size: 1rem;
+      }
+      .hero h1 {
+        font-size: 20px;
+      }
+      .section-title {
+        font-size: 18px;
+      }
+      .text {
+        font-size: 13px;
+      }
+    }
     .sub-links {
   	display: flex;
  	 justify-content: center;
@@ -134,7 +173,7 @@
 
   <section>
     <div class="section-title">CallGen</div>
-      <img src="smartcallgen.gif" alt="스마트콜젠 이미지" >
+      <img src="smartcallgen.gif" alt="스마트콜젠 이미지" class="img-responsive">
       <div class="text">
         <p><li>미국 Tolly Group 에서 성능, 기능에 대한 인증을 획득 함</li>
 <li>국내 TTA 등에서 기준장비로 사용하고 있음</li>
@@ -164,11 +203,11 @@
 
 <section>
     <div class="section-title">시스템 구성도</div>
-    <img src="configuration.png" alt="스마트콜젠 구성도" >
+    <img src="configuration.png" alt="스마트콜젠 구성도" class="img-responsive">
 </section>
 <section>
     <div class="section-title">측정결과</div>
-    <img src="result.gif" height="500" alt="스마트콜젠 측정결과" >
+    <img src="result.gif" height="500" alt="스마트콜젠 측정결과" class="img-responsive">
  </section>  
 
   <footer>
