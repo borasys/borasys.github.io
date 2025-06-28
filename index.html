@@ -3,6 +3,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="보라시스(주) 공식 홈페이지 - 측정기기 전문업체">
 <meta name="keywords" content="보라시스, 측정기기, Smart CallGen, VoIP, 네트워크">
 <meta name="robots" content="index, follow">
@@ -16,12 +17,15 @@
       color: #333;
     }
     .container {
-    width: 1000px; /* 고정 폭 지정 */
-    margin: 0 auto; /* 가운데 정렬 */
+    max-width: 1000px; /* 고정 폭 지정 */
+    width: 100%;
+      margin: 0 auto;
+      padding: 0 16px;
    }
    .img-fixed {
-    width: 600px;
-    height: auto;  /* 세로는 비율대로 */
+    max-width: 600px;
+      width: 100%;
+      height: auto;
   }
 
   .img-responsive {
@@ -30,7 +34,7 @@
   }
     .navbar {
       background: white;
-      padding: 15px 40px;
+      padding: 15px 20px;
       border-bottom: 1px solid #ddd;
       display: flex;
       align-items: center;
@@ -116,12 +120,13 @@
     }
     .content-row {
       display: flex;
+       flex-wrap: wrap;
       gap: 30px;
       align-items: flex-start;
     }
     .content-row img {
-      max-width: 600px;
-      border-radius: 0px;
+      max-width: 100%;
+      border-radius: 0;
     }
     .text {
       flex: 1;
@@ -130,6 +135,7 @@
     }
     .product-img {
       max-width: 200px;
+      width: 100%;
     }
     .map-container iframe {
       width: 100%;
@@ -142,6 +148,29 @@
       padding: 20px;
       background: #595c50;
       color: #fff;
+    }
+   @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar .menu {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .hero-description {
+        font-size: 1rem;
+      }
+      .hero h1 {
+        font-size: 20px;
+      }
+      .section-title {
+        font-size: 18px;
+      }
+      .text {
+        font-size: 13px;
+      }
     }
   </style>
 
@@ -166,9 +195,11 @@
   <div class="hero">
     <div class ="hero-description"> 
        <h1 style="margin: 0;">Borasys is Engineering Tomorrow, Delivering Real Value</h1>
+            <ul>
              <li>Advanced Technology</li>
              <li>Smart Solutions</li>
              <li>Inspired by Vision</li>
+           </ul>
   </div>
 </div>
   <section>
